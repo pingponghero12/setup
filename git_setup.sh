@@ -15,5 +15,5 @@ ssh-add ~/.ssh/id_ed25519
 
 ssh -T git@github.com
 
-# Move i3
+# Move i3 config
 cp ~/Documents/setup/config ~/.config/i3/config
