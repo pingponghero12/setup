@@ -20,7 +20,7 @@ echo "# Timezone to bash" >> ~/.bashrc
 echo "export TZ='Europe/Kiev" >> ~/.bashrc
 
 # Install packages required for i3
-sudo apt install -y xorg i3 rxvt-unicode xfce4-terminal net-tools htop vim openssh-server
+sudo apt install -y xorg i3 rxvt-unicode xfce4-terminal net-tools htop openssh-server
 
 # Setup startx
 echo > ~/.xinitrc "exec i3"
@@ -33,9 +33,10 @@ mv mouse.conf /etc/X11/xorg.conf.d/99-libinput-custom-config.conf
 
 # Setup theme color related
 sudo apt install -y arc-theme qt5ct
-echo > ~/.gtkrc-2.0 "gtk-theme-name="Adwaita-dark"
+echo > ~/.gtkrc-2.0 "gtk-theme-name="Adwaita-dark""
 echo > ~/.config/gtk-3.0/settings.ini "[Settings]
 gtk-theme-name=Adwaita-dark"
+
 echo "You need to change qt5ct theme, use 'qt5ct'"
 
 echo "Basic setup completed. Reboot and start i3 by 'startx'"
